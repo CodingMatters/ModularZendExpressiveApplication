@@ -1,7 +1,6 @@
 <?php
 
 use Zend\Expressive\Container;
-use Whoops;
 
 return [
     'debug' => true,
