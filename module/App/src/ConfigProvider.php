@@ -79,14 +79,12 @@ final class ConfigProvider
             // Map a service name to the class name.
             // Fully\Qualified\InterfaceName::class => Fully\Qualified\ClassName::class,
             'invokables'    => [
-                // Sample Middleware Action
-                App\Action\PingAction::class => App\Action\PingAction::class,
+                App\Action\PingAction::class => App\Action\PingAction::class
             ],
 
             // Use 'factories' for services provided by callbacks/factory classes.
             'factories'     => [
-                // Sample Middleware Pages
-                Action\HomePageAction::class => Action\HomePageFactory::class,
+                Action\HomePageAction::class => Action\HomePageFactory::class
             ]
         ];
     }
