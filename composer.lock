@@ -4,12 +4,12 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2de84cc46080203931be294945edad78",
-    "content-hash": "561362d7b1dc42818fe07ea4d9cd28ae",
+    "hash": "183a4bef830595303cbcb70a9c5b6e88",
+    "content-hash": "7e5623ef5b6445b51b1ec74d0b3ec3ed",
     "packages": [
         {
             "name": "codingmatters/zend-expressive-config-provider",
-            "version": "dev-develop",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/CodingMatters/zend-expressive-config-provider.git",
@@ -46,7 +46,7 @@
         },
         {
             "name": "codingmatters/zend-expressive-zend-component",
-            "version": "dev-develop",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/CodingMatters/zend-expressive-zend-components.git",
@@ -4489,9 +4489,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "roave/security-advisories": 20,
-        "codingmatters/zend-expressive-config-provider": 20,
-        "codingmatters/zend-expressive-zend-component": 20
+        "roave/security-advisories": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
