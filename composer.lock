@@ -4,9 +4,83 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f03616b26d6510acad03dad09d3a1707",
-    "content-hash": "4c49a2e8685a15f8992b09871b29274e",
+    "hash": "2de84cc46080203931be294945edad78",
+    "content-hash": "561362d7b1dc42818fe07ea4d9cd28ae",
     "packages": [
+        {
+            "name": "codingmatters/zend-expressive-config-provider",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/CodingMatters/zend-expressive-config-provider.git",
+                "reference": "703a4b207898fb464c38c491c0d21c7347987d56"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/CodingMatters/zend-expressive-config-provider/zipball/703a4b207898fb464c38c491c0d21c7347987d56",
+                "reference": "703a4b207898fb464c38c491c0d21c7347987d56",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0",
+                "roave/security-advisories": "dev-master",
+                "zendframework/zend-expressive": "^1.0",
+                "zendframework/zend-expressive-helpers": "^2.0"
+            },
+            "type": "library",
+            "extra": {
+                "zf": {
+                    "config-provider": "Zend\\Expressive\\ConfigProvider"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Zend\\Expressive\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "time": "2016-08-20 06:11:23"
+        },
+        {
+            "name": "codingmatters/zend-expressive-zend-component",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/CodingMatters/zend-expressive-zend-components.git",
+                "reference": "61c5bc97cba3fd68078e4b83404eabd1cbf6c381"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/CodingMatters/zend-expressive-zend-components/zipball/61c5bc97cba3fd68078e4b83404eabd1cbf6c381",
+                "reference": "61c5bc97cba3fd68078e4b83404eabd1cbf6c381",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0",
+                "roave/security-advisories": "dev-master",
+                "zendframework/zend-expressive-zendrouter": "^1.2",
+                "zendframework/zend-expressive-zendviewrenderer": "^1.1"
+            },
+            "type": "library",
+            "extra": {
+                "zf": {
+                    "config-provider": "Zend\\Component\\ConfigProvider"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Zend\\Component\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "time": "2016-08-20 06:40:48"
+        },
         {
             "name": "container-interop/container-interop",
             "version": "1.1.0",
@@ -4415,7 +4489,9 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "roave/security-advisories": 20
+        "roave/security-advisories": 20,
+        "codingmatters/zend-expressive-config-provider": 20,
+        "codingmatters/zend-expressive-zend-component": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
