@@ -75,18 +75,6 @@ final class ConfigProvider
     }
 
     /**
-     * Return navigation mapping for this module.
-     *
-     * @return array
-     */
-    public function getNavigationConfig()
-    {
-        return [
-            'default' => []
-        ];
-    }
-
-    /**
      * An array of middleware to register. Each item is of the following specification:
      *
      * <code>
