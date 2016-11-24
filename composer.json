@@ -1,6 +1,6 @@
 {
     "name": "codingmatters/modular-zend-expressive-application",
-    "description": "Skelton for modular zend expressive application.",
+    "description": "A Modular Skeleton Application based on Zend Expressive",
     "type": "project",    
     "license": "MIT",
     "authors": [

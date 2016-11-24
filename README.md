@@ -1,4 +1,4 @@
-# Skeleton for Modular Zend Expressive Application
+# A Modular Skeleton Application based on Zend Expressive
 
 ### Features:
 
