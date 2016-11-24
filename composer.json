@@ -1,6 +1,6 @@
 {
-    "name": "codingmatters/zf-expressive-modular-app",
-    "description": "Zend expressive modular skelton application.",
+    "name": "codingmatters/modular-zend-expressive-application",
+    "description": "Skelton for modular zend expressive application.",
     "type": "project",    
     "license": "MIT",
     "authors": [
@@ -10,29 +10,19 @@
             "email": "gamba@gabbydgab.com"
         }
     ],
-    "extra": {
-        "branch-alias": {
-            "dev-master": "1.0-dev",
-            "dev-develop": "1.1-dev"
-        }
-    },
     "require": {
-        "php": "^5.5 || ^7.0",
+        "php": "~7.0.13",
         "roave/security-advisories": "dev-master",        
-        "codingmatters/zend-expressive-config-provider": "^1.0",
-        "codingmatters/zend-expressive-zend-component": "^1.0",
-        "zendframework/zend-servicemanager": "^3.0",
-        "zendframework/zend-stdlib": "^3.0",
-        "mtymek/expressive-config-manager": "^1.0 || ~0.4",
-        "ocramius/proxy-manager": "^2.0"
+        "codingmatters/zend-expressive-config-provider": "^1.0 || ~0.1",
+        "codingmatters/zend-expressive-zend-component": "^1.0 || ~0.1",        
+        "mtymek/expressive-config-manager": "^1.0 || ~0.4"
     },
     "require-dev": {
-        "zendframework/zend-component-installer": "^1.0 || ~0.3",
-        "zfcampus/zf-development-mode": "^3.0",
-        "zendframework/zend-test": "^3.0.1",
-        "squizlabs/php_codesniffer": "^2.6.2",
-        "phpbench/phpbench": "^0.11.2",
+        "zendframework/zend-component-installer": "^1.0 || ~0.5",
+        "zfcampus/zf-development-mode": "^3.0",        
+        "squizlabs/php_codesniffer": "^2.6.2",        
         "sebastian/phpcpd": "^2.0.4",
+        "phpunit/phpunit": "^5.6",
         "filp/whoops": "^2.0"
     },
     "autoload": {
@@ -47,23 +37,23 @@
     },
     "scripts": {
         "post-install-cmd": [
-            "@show-me-the-bugs"
+            "@debug"
         ],
         "post-update-cmd": [
-            "@show-me-the-bugs"
+            "@debug"
         ],
         "post-create-project-cmd": [
             "@development-enable",
             "@serve"
         ],
-        "show-me-the-bugs": [
+        "debug": [
             "@cs",
             "@cpd",
             "@test"
         ],
         "cs": "phpcs --ignore=/vendor,/build module",
         "cs-fix": "phpcbf --ignore=/vendor,/build module",
-        "cpd": "phpcpd --exclude=/vendor,/build --names-exclude=Module.php,ConfigProvider.php --fuzzy module",
+        "cpd": "phpcpd --exclude=/vendor,/build --fuzzy module",
         "test": "phpunit --verbose",                
         "development-disable": "zf-development-mode disable",
         "development-enable": "zf-development-mode enable",
