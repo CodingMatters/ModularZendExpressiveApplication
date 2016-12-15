@@ -1,6 +1,6 @@
 <?php
 
-use Zend\Expressive\ConfigManager\ConfigManager;
+use Zend\ConfigAggregator\ConfigAggregator;
 use Zend\Stdlib\ArrayUtils;
 use Zend\Stdlib\Glob;
 
@@ -22,7 +22,7 @@ if (is_file($cachedConfigFile)) {
 } else {
     // Configuration from loaded modules (including vendor via zend-component-installer)
     $modules = require __DIR__ . '/modules.config.php';
-    $mergedModules = (new ConfigManager($modules))->getMergedConfig();
+    $mergedModules = (new ConfigAggregator($modules))->getMergedConfig();
     $config = ArrayUtils::merge($config, $mergedModules);
 
     // Load configuration from autoload path
