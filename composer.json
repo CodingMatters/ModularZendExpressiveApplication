@@ -15,14 +15,14 @@
         "roave/security-advisories": "dev-master",        
         "codingmatters/zend-expressive-config-provider": "~0.1",
         "codingmatters/expressive-web-component": "~0.1",        
-        "mtymek/expressive-config-manager": "~0.4"
+        "zendframework/zend-config-aggregator": "~0.1"
     },
     "require-dev": {
-        "zendframework/zend-component-installer": "^1.0 || ~0.5",
+        "zendframework/zend-component-installer": "~0.5",
         "zfcampus/zf-development-mode": "^3.0",        
         "squizlabs/php_codesniffer": "^2.7.1",        
         "sebastian/phpcpd": "^2.0.4",
-        "phpunit/phpunit": "^5.7.2",
+        "phpunit/phpunit": "^5.7.4",
         "filp/whoops": "^2.1.4"
     },
     "autoload": {
