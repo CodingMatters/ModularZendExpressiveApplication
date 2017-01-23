@@ -13,17 +13,18 @@
     "require": {
         "php": "^7.1",
         "roave/security-advisories": "dev-master",        
-        "codingmatters/zend-expressive-config-provider": "~0.1",
-        "codingmatters/expressive-web-component": "~0.1",        
-        "zendframework/zend-config-aggregator": "~0.1"
+        "codingmatters/zend-expressive-config-provider": "^0.2.0",
+        "codingmatters/expressive-web-component": "^0.4.0",
+        "zendframework/zend-config-aggregator": "^0.2.0"
     },
     "require-dev": {
-        "zendframework/zend-component-installer": "~0.5",
-        "zfcampus/zf-development-mode": "^3.0",        
-        "squizlabs/php_codesniffer": "^2.7.1",        
-        "sebastian/phpcpd": "^2.0.4",
-        "phpunit/phpunit": "^5.7.4",
-        "filp/whoops": "^2.1.4"
+        "zendframework/zend-component-installer": "^0.6.0",
+        "zendframework/zend-coding-standard": "^1.0",
+        "zfcampus/zf-development-mode": "^3.1",
+        "malukenho/docheader": "^0.1.5",
+        "sebastian/phpcpd": "^2.0",
+        "phpunit/phpunit": "^5.7",
+        "filp/whoops": "^2.1"
     },
     "autoload": {
         "psr-4": {
@@ -37,24 +38,24 @@
     },
     "scripts": {
         "post-install-cmd": [
-            "@debug"
+            "@check"
         ],
         "post-update-cmd": [
-            "@debug"
+            "@check"
         ],
         "post-create-project-cmd": [
             "@development-enable",
             "@serve"
         ],
-        "debug": [
-            "@cs",
+        "check": [
+            "@cs-check",
             "@cpd",
             "@test"
         ],
-        "cs": "phpcs --ignore=/vendor,/build module",
-        "cs-fix": "phpcbf --ignore=/vendor,/build module",
+        "cs-check": "phpcs",
+        "cs-fix": "phpcbf",
         "cpd": "phpcpd --exclude=/vendor,/build --fuzzy module",
-        "test": "phpunit --verbose",                
+        "test": "phpunit --verbose --colors=always",
         "development-disable": "zf-development-mode disable",
         "development-enable": "zf-development-mode enable",
         "development-status": "zf-development-mode status",

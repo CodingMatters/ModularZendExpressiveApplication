@@ -2,7 +2,7 @@
 
 <phpunit bootstrap="./vendor/autoload.php" colors="true">
     <logging>
-        <log type="coverage-html"  target="public/build/coverage" title="ZendExpressiveModularApp"
+        <log type="coverage-html"  target="public/build/coverage" title="ExpressiveModularApp"
         charset="UTF-8" yui="true" highlight="true"
         lowUpperBound="35" highLowerBound="true" />
         <log type="coverage-clover" target="public/build/logs/clover.xml" />
