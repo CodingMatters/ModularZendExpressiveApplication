@@ -12,6 +12,7 @@ $config = new ConfigAggregator(
         \Zend\Component\ConfigProvider::class,
         \CodingMatters\ExpressiveWebHelper\ConfigProvider::class,
         \CodingMatters\ExpressiveErrorHandler\ConfigProvider::class,
+        \App\ConfigProvider::class,
         new PhpFileProvider('config/autoload/{{,*.}global,{,*.}local}.php'),
         new PhpFileProvider('config/development.config.php') // only override if development mode is ENABLED
     ],

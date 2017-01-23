@@ -24,7 +24,7 @@ class HomePageFactoryTest extends \PHPUnit_Framework_TestCase
     public function testFactoryWithoutTemplate()
     {
         $factory = new HomePageFactory();
-        $this->container->has(TemplateRendererInterface::class)->willReturn(false);
+        $this->container->get(TemplateRendererInterface::class)->willReturn(null);
 
         $this->assertTrue($factory instanceof HomePageFactory);
 
@@ -36,7 +36,6 @@ class HomePageFactoryTest extends \PHPUnit_Framework_TestCase
     public function testFactoryWithTemplate()
     {
         $factory = new HomePageFactory();
-        $this->container->has(TemplateRendererInterface::class)->willReturn(true);
         $this->container
             ->get(TemplateRendererInterface::class)
             ->willReturn($this->prophesize(TemplateRendererInterface::class));

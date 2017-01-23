@@ -11,9 +11,7 @@ class HomePageFactory
     public function __invoke(ContainerInterface $container)
     {
         $router   = $container->get(RouterInterface::class);
-        $template = ($container->has(TemplateRendererInterface::class))
-            ? $container->get(TemplateRendererInterface::class)
-            : null;
+        $template = $container->get(TemplateRendererInterface::class) ?? null;
 
         return new HomePageAction($router, $template);
     }

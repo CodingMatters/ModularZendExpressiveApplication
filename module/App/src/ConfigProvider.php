@@ -79,7 +79,7 @@ final class ConfigProvider
             // Map a service name to the class name.
             // Fully\Qualified\InterfaceName::class => Fully\Qualified\ClassName::class,
             'invokables'    => [
-                App\Action\PingAction::class => App\Action\PingAction::class
+                Action\PingAction::class => Action\PingAction::class
             ],
 
             // Use 'factories' for services provided by callbacks/factory classes.
