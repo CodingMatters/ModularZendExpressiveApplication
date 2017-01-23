@@ -14,7 +14,7 @@
         "php": "^7.1",
         "roave/security-advisories": "dev-master",        
         "codingmatters/zend-expressive-config-provider": "^0.2.0",
-        "codingmatters/expressive-web-component": "^0.4.0",
+        "codingmatters/expressive-web-component": "^0.4.1",
         "zendframework/zend-config-aggregator": "^0.2.0"
     },
     "require-dev": {

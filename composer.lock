@@ -49,16 +49,16 @@
         },
         {
             "name": "codingmatters/expressive-web-component",
-            "version": "0.4.0",
+            "version": "0.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/CodingMatters/ExpressiveWebComponents.git",
-                "reference": "8b9a55a8d9d3acca8fc7a84b77048f878bf7689c"
+                "reference": "8f3ae0346fdf41e993df13a71abcf1bbadae9b99"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CodingMatters/ExpressiveWebComponents/zipball/8b9a55a8d9d3acca8fc7a84b77048f878bf7689c",
-                "reference": "8b9a55a8d9d3acca8fc7a84b77048f878bf7689c",
+                "url": "https://api.github.com/repos/CodingMatters/ExpressiveWebComponents/zipball/8f3ae0346fdf41e993df13a71abcf1bbadae9b99",
+                "reference": "8f3ae0346fdf41e993df13a71abcf1bbadae9b99",
                 "shasum": ""
             },
             "require": {
@@ -73,7 +73,7 @@
                 "zf": {
                     "config-provider": [
                         "Zend\\Expressive\\ConfigProvider",
-                        "Zend\\Components\\ConfigProvider",
+                        "Zend\\Component\\ConfigProvider",
                         "CodingMatters\\ExpressiveErrorHandler\\ConfigProvider",
                         "CodingMatters\\ExpressiveWebHelper\\ConfigProvider"
                     ]
@@ -90,7 +90,7 @@
                 }
             ],
             "description": "Zend Expressive Web Component Installer",
-            "time": "2017-01-21T15:53:03+00:00"
+            "time": "2017-01-23T04:38:54+00:00"
         },
         {
             "name": "codingmatters/expressive-web-helper",
