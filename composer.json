@@ -23,7 +23,7 @@
         "zfcampus/zf-development-mode": "^3.1",
         "malukenho/docheader": "^0.1.5",
         "sebastian/phpcpd": "^2.0",
-        "phpunit/phpunit": "^5.7",
+        "phpunit/phpunit": "^6.0",
         "filp/whoops": "^2.1"
     },
     "autoload": {
