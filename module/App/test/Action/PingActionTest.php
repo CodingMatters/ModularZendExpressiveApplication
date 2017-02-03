@@ -6,7 +6,7 @@ use App\Action\PingAction;
 use Zend\Diactoros\Response;
 use Zend\Diactoros\ServerRequest;
 
-class PingActionTest extends \PHPUnit_Framework_TestCase
+class PingActionTest extends \PHPUnit\Framework\TestCase
 {
     public function testResponse()
     {

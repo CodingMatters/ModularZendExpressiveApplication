@@ -7,7 +7,7 @@ use Zend\Diactoros\Response;
 use Zend\Diactoros\ServerRequest;
 use Zend\Expressive\Router\RouterInterface;
 
-class HomePageActionTest extends \PHPUnit_Framework_TestCase
+class HomePageActionTest extends \PHPUnit\Framework\TestCase
 {
     /** @var RouterInterface */
     protected $router;

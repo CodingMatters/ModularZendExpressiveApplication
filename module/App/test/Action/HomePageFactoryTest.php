@@ -8,7 +8,7 @@ use Interop\Container\ContainerInterface;
 use Zend\Expressive\Router\RouterInterface;
 use Zend\Expressive\Template\TemplateRendererInterface;
 
-class HomePageFactoryTest extends \PHPUnit_Framework_TestCase
+class HomePageFactoryTest extends \PHPUnit\Framework\TestCase
 {
     /** @var ContainerInterface */
     protected $container;
